@@ -31,6 +31,8 @@
 		C0DEF64027AC02BE00678624 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF63F27AC02BE00678624 /* UserListView.swift */; };
 		C0DEF64227AC02DD00678624 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF64127AC02DD00678624 /* UserCell.swift */; };
 		C0DEF64427AC252100678624 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF64327AC252100678624 /* NotificationCell.swift */; };
+		C0DEF64627AC2A1500678624 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF64527AC2A1500678624 /* ImagePicker.swift */; };
+		C0DEF64827AC34D100678624 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF64727AC34D100678624 /* TextArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		C0DEF63F27AC02BE00678624 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		C0DEF64127AC02DD00678624 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		C0DEF64327AC252100678624 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		C0DEF64527AC2A1500678624 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		C0DEF64727AC34D100678624 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				C0DEF63D27AC008200678624 /* Extensions.swift */,
+				C0DEF64527AC2A1500678624 /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				C0DEF63927ABFA5400678624 /* PostGridView.swift */,
 				C0DEF63F27AC02BE00678624 /* UserListView.swift */,
 				C0DEF64127AC02DD00678624 /* UserCell.swift */,
+				C0DEF64727AC34D100678624 /* TextArea.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -309,9 +315,11 @@
 				C0DEF62E27ABE5D200678624 /* FeedView.swift in Sources */,
 				C0DEF63E27AC008200678624 /* Extensions.swift in Sources */,
 				C0DEF60027ABE22200678624 /* Instagram_CloneApp.swift in Sources */,
+				C0DEF64827AC34D100678624 /* TextArea.swift in Sources */,
 				C0DEF63A27ABFA5400678624 /* PostGridView.swift in Sources */,
 				C0DEF63C27ABFD4000678624 /* SearchBar.swift in Sources */,
 				C0DEF63727ABEAC800678624 /* FeedCell.swift in Sources */,
+				C0DEF64627AC2A1500678624 /* ImagePicker.swift in Sources */,
 				C0DEF64427AC252100678624 /* NotificationCell.swift in Sources */,
 				C0DEF64027AC02BE00678624 /* UserListView.swift in Sources */,
 			);
