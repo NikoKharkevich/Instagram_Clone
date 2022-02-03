@@ -24,6 +24,7 @@
 		C0DEF63027ABE5E300678624 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF62F27ABE5E300678624 /* MainView.swift */; };
 		C0DEF63327ABE6AF00678624 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF63227ABE6AF00678624 /* UploadPostView.swift */; };
 		C0DEF63527ABE6F900678624 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF63427ABE6F800678624 /* ContentView.swift */; };
+		C0DEF63727ABEAC800678624 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF63627ABEAC800678624 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C0DEF62F27ABE5E300678624 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C0DEF63227ABE6AF00678624 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		C0DEF63427ABE6F800678624 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C0DEF63627ABEAC800678624 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				C0DEF62D27ABE5D200678624 /* FeedView.swift */,
+				C0DEF63627ABEAC800678624 /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				C0DEF63327ABE6AF00678624 /* UploadPostView.swift in Sources */,
 				C0DEF62E27ABE5D200678624 /* FeedView.swift in Sources */,
 				C0DEF60027ABE22200678624 /* Instagram_CloneApp.swift in Sources */,
+				C0DEF63727ABEAC800678624 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
