@@ -21,7 +21,7 @@ struct SearchBar: View {
                 .cornerRadius(8)
                 .overlay(
                     HStack {
-                        Image(systemName: "magnifiyingglas")
+                        Image(systemName: "magnifyingglass")
                             .foregroundColor(.gray)
                             .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     })
@@ -37,9 +37,6 @@ struct SearchBar: View {
             .padding(.trailing, 8)
             .transition(.move(edge: .trailing))
             .animation(.default, value: UUID())
-
-            
-
         }
         .onTapGesture {
             isEditing = true
