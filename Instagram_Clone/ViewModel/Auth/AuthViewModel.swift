@@ -11,12 +11,14 @@ import Firebase
 class AuthViewModel: ObservableObject {
     
     @Published var userSession: Firebase.User?
+    @Published var currentUser: User?
     
     static let shared = AuthViewModel()
     
     // checking if there is a current user
     init() {
         userSession = Auth.auth().currentUser
+        fetchUser()
     }
     
     func register(withEmail email: String, password: String, username: String, fullname: String) {
@@ -43,8 +45,9 @@ class AuthViewModel: ObservableObject {
                     print(error.localizedDescription)
                     return
                 }
-                
-                print("DEBUG: USER CREATED")
+
+                self.userSession = user
+                self.fetchUser()
             }
         }
     }
@@ -58,11 +61,27 @@ class AuthViewModel: ObservableObject {
             
             guard let user = result?.user else { return }
             self.userSession = user
+            self.fetchUser()
         }
     }
     
     func logout() {
         self.userSession = nil
         try? Auth.auth().signOut()
+    }
+    
+    func fetchUser() {
+        
+        guard let uid = userSession?.uid else { return }
+        
+        Firestore.firestore().collection("users").document(uid).getDocument { snapshot, error in
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            
+            guard let user = try? snapshot?.data(as: User.self) else { return }
+            self.currentUser = user
+        }
     }
 }
