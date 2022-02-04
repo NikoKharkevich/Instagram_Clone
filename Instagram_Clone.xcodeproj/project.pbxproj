@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0C46AEF27AD1E3D003BD0F3 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C46AEE27AD1E3D003BD0F3 /* ForgotPasswordView.swift */; };
 		C0DEF60027ABE22200678624 /* Instagram_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF5FF27ABE22200678624 /* Instagram_CloneApp.swift */; };
 		C0DEF60427ABE22800678624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DEF60327ABE22800678624 /* Assets.xcassets */; };
 		C0DEF60727ABE22800678624 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DEF60627ABE22800678624 /* Preview Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0C46AEE27AD1E3D003BD0F3 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		C0DEF5FC27ABE22200678624 /* Instagram_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DEF5FF27ABE22200678624 /* Instagram_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_CloneApp.swift; sourceTree = "<group>"; };
 		C0DEF60327ABE22800678624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			children = (
 				C0DEF65027AC423900678624 /* RegisterView.swift */,
 				C0DEF65227AC424800678624 /* SigninView.swift */,
+				C0C46AEE27AD1E3D003BD0F3 /* ForgotPasswordView.swift */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				C0DEF63327ABE6AF00678624 /* UploadPostView.swift in Sources */,
 				C0DEF64227AC02DD00678624 /* UserCell.swift in Sources */,
 				C0DEF62E27ABE5D200678624 /* FeedView.swift in Sources */,
+				C0C46AEF27AD1E3D003BD0F3 /* ForgotPasswordView.swift in Sources */,
 				C0DEF63E27AC008200678624 /* Extensions.swift in Sources */,
 				C0DEF60027ABE22200678624 /* Instagram_CloneApp.swift in Sources */,
 				C0DEF65527AC436900678624 /* CustomTextField.swift in Sources */,

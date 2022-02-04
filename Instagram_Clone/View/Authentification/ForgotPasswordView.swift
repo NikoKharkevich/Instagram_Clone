@@ -1,22 +1,22 @@
 //
-//  RegisterView.swift
+//  ForgotPasswordView.swift
 //  Instagram_Clone
 //
-//  Created by Nikola Kharkevich on 03.02.2022.
+//  Created by Nikola Kharkevich on 04.02.2022.
 //
 
 import SwiftUI
 
-struct RegisterView: View {
+struct ForgotPasswordView: View {
     
-    @State var email = ""
-    @State var username = ""
-    @State var fullname = ""
-    @State var password = ""
+    @Binding var email: String
     
+    init(email: Binding<String>) {
+        self._email = email
+        
+    }
     
     var body: some View {
-        
         NavigationView {
             
             VStack {
@@ -31,25 +31,27 @@ struct RegisterView: View {
                     CustomTextField(text: $email, placeholder: Text("Email"), imageName: "envelope")
                         .padding()
                         .padding(.horizontal, 32)
-                    
-                    CustomTextField(text: $username, placeholder: Text("Username"), imageName: "person")
-                        .padding()
-                        .padding(.horizontal, 32)
-                    
-                    CustomTextField(text: $fullname, placeholder: Text("Full Name"), imageName: "person")
-                        .padding()
-                        .padding(.horizontal, 32)
-                    
-                    CustomSecureField(text: $password, placeholder: Text("Password"))
-                        .padding()
-                        .padding(.horizontal, 32)
-                    
                 }
+                
+                HStack {
+                    Spacer()
+                    
+                    NavigationLink  {
+                        SigninView()
+                            .navigationBarHidden(true)
+                    } label: {
+                        Text("Go back")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundColor(.gray)
+                            .padding(.top)
+                            .padding(.trailing, 28)
+                    }
+                }.padding(.horizontal, 24)
                 
                 Button {
                     
                 } label: {
-                    Text("Register")
+                    Text("Reset Password")
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(width: 360, height: 50)
@@ -67,17 +69,17 @@ struct RegisterView: View {
                         Text("Already have any account?")
                             .font(.system(size: 14, weight: .semibold))
                         
-                        Text("Sign In")
+                        Text("Sign Up")
                             .font(.system(size: 14))
                     }
                 })
-            }.padding(.top, -100) // to push view up
+            }.padding(.top, -80) // to push view up
         }
     }
 }
 
-struct RegisterView_Previews: PreviewProvider {
+struct ForgotPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterView()
+        ForgotPasswordView(email: .constant("email"))
     }
 }
