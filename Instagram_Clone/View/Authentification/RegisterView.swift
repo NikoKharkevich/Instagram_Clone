@@ -14,6 +14,7 @@ struct RegisterView: View {
     @State var fullname = ""
     @State var password = ""
     
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         
@@ -47,7 +48,7 @@ struct RegisterView: View {
                 }
                 
                 Button {
-                    
+                    viewModel.register(withEmail: email, password: password)
                 } label: {
                     Text("Register")
                         .font(.headline)
