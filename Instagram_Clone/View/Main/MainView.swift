@@ -55,8 +55,19 @@ struct MainView: View {
                     }.tag(4)
             }
             .navigationTitle(tabTitle) // addig title within navigation view {}
+            .navigationBarItems(trailing: logOutButton)
             .accentColor(.black)
         }
+    }
+    
+    private var logOutButton: some View {
+        Button {
+            AuthViewModel.shared.logout()
+        } label: {
+            Text("Log Out")
+                .foregroundColor(.black)
+        }
+
     }
     
     private var tabTitle: String {
