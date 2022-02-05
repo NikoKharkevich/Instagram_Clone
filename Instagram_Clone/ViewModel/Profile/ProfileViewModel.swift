@@ -37,6 +37,15 @@ class ProfileViewModel: ObservableObject {
                 
                 guard let imageURL = url?.absoluteString else { return }
                 
+                // updating image
+                guard let uid = self.user.id else { return }
+                let document = Firestore.firestore().collection("users").document(uid)
+                document.updateData(["profileImageURL": imageURL]) { error in
+                    if let error = error {
+                        print(error.localizedDescription)
+                        return
+                    }
+                }
             }
         }
     }
