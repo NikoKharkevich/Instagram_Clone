@@ -22,12 +22,22 @@ struct ProfileHeaderView: View {
                 ZStack {
                     // we show avatar if it exists in Firestore
                     if let imageURL = viewModel.user.profileImageURL {
-                        KFImage(URL(string: imageURL))
-                            .resizable()
-                            .scaledToFill()
-                            .frame(width: 80, height: 80)
-                            .clipShape(Circle())
-                            .padding(.leading, 16)
+                        
+                        Button {
+                            self.isImagePickerPresented.toggle()
+                        } label: {
+                            KFImage(URL(string: imageURL))
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 80, height: 80)
+                                .clipShape(Circle())
+                                .padding(.leading, 16)
+                        }.sheet(isPresented: $isImagePickerPresented) {
+                            loadImage()
+                        } content: {
+                            ImagePicker(image: $selectedImage)
+                        }
+                        
                     } else {
                         // otherwise we show default image with option to choose avatar via image picker (in button)
                         Button {

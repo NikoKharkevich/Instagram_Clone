@@ -13,6 +13,8 @@
 		C0C46AFA27AD832F003BD0F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C46AF927AD832F003BD0F3 /* User.swift */; };
 		C0C46AFC27ADC426003BD0F3 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C46AFB27ADC426003BD0F3 /* ProfileViewModel.swift */; };
 		C0C46AFE27AE8849003BD0F3 /* ProfileButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C46AFD27AE8849003BD0F3 /* ProfileButtonView.swift */; };
+		C0C46B0027AEB75F003BD0F3 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C46AFF27AEB75F003BD0F3 /* UploadPostViewModel.swift */; };
+		C0C46B0227AEC4CC003BD0F3 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C46B0127AEC4CC003BD0F3 /* ImageUploader.swift */; };
 		C0DEF60027ABE22200678624 /* Instagram_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DEF5FF27ABE22200678624 /* Instagram_CloneApp.swift */; };
 		C0DEF60427ABE22800678624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DEF60327ABE22800678624 /* Assets.xcassets */; };
 		C0DEF60727ABE22800678624 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DEF60627ABE22800678624 /* Preview Assets.xcassets */; };
@@ -54,6 +56,8 @@
 		C0C46AF927AD832F003BD0F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C0C46AFB27ADC426003BD0F3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		C0C46AFD27AE8849003BD0F3 /* ProfileButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonView.swift; sourceTree = "<group>"; };
+		C0C46AFF27AEB75F003BD0F3 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		C0C46B0127AEC4CC003BD0F3 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		C0DEF5FC27ABE22200678624 /* Instagram_Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram_Clone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DEF5FF27ABE22200678624 /* Instagram_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_CloneApp.swift; sourceTree = "<group>"; };
 		C0DEF60327ABE22800678624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 		C0C46AF527AD28F8003BD0F3 /* Upload */ = {
 			isa = PBXGroup;
 			children = (
+				C0C46AFF27AEB75F003BD0F3 /* UploadPostViewModel.swift */,
 			);
 			path = Upload;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 		C0DEF61127ABE2F600678624 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				C0C46B0127AEC4CC003BD0F3 /* ImageUploader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -407,6 +413,8 @@
 				C0DEF60027ABE22200678624 /* Instagram_CloneApp.swift in Sources */,
 				C0DEF65527AC436900678624 /* CustomTextField.swift in Sources */,
 				C0DEF64827AC34D100678624 /* TextArea.swift in Sources */,
+				C0C46B0227AEC4CC003BD0F3 /* ImageUploader.swift in Sources */,
+				C0C46B0027AEB75F003BD0F3 /* UploadPostViewModel.swift in Sources */,
 				C0DEF63A27ABFA5400678624 /* PostGridView.swift in Sources */,
 				C0DEF64E27AC3F4500678624 /* UserStats.swift in Sources */,
 				C0DEF63C27ABFD4000678624 /* SearchBar.swift in Sources */,
