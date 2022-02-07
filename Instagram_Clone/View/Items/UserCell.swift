@@ -6,21 +6,34 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct UserCell: View {
+    
+    let user: User
+    
     var body: some View {
         HStack {
-            Image("ted")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 48, height: 48)
-                .clipped()
-                .clipShape(Circle())  // same as corner radius
             
+            if let imageURL = user.profileImageURL {
+                KFImage(URL(string: imageURL))
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 48, height: 48)
+                    .clipped()
+                    .clipShape(Circle())  // same as corner radius
+            } else {
+                Image("profile-placeholder")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 48, height: 48)
+                    .clipped()
+                    .clipShape(Circle())
+            }
             VStack {
-                Text("tedmosby")
+                Text(user.username)
                     .font(.system(size: 14, weight: .semibold))
-                Text("Ted Mosby")
+                Text(user.fullname)
                     .font(.system(size: 14))
             }
             
@@ -28,11 +41,5 @@ struct UserCell: View {
             
             
         }
-    }
-}
-
-struct UserCell_Previews: PreviewProvider {
-    static var previews: some View {
-        UserCell()
     }
 }

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SearchView: View {
     
+    @ObservedObject var viewModel = SearchViewModel()
+    
     @State var searchText = ""
     @State var inSearchMode = false
     
@@ -19,7 +21,7 @@ struct SearchView: View {
             
             ZStack {
                 if inSearchMode == true {
-                    UserListView()
+                    UserListView(viewModel: viewModel, searchText: $searchText)
                 } else {
                     PostGridView()
                 }
